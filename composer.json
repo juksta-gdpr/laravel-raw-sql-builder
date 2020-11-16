@@ -1,0 +1,42 @@
+{
+    "name": "juksta/laravel-raw-sql-builder",
+    "description": "Create and operate raw sql as string with parameters support",
+    "keywords": [
+        "juksta",
+        "raw-sql",
+		"laravel",
+		"lumen",
+		"mysql"
+    ],
+    "homepage": "https://github.com/juksta-gdpr/laravel-raw-sql-builder",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yurii Ishchenko",
+            "email": "ishenkoyv@gmail.com"
+        }
+    ],
+	"require": {
+		"php": ">=7.1.1",
+		"illuminate/database": ">=5.8"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "^9.0",
+		"mockery/mockery": "^1.4.0"
+	},
+    "autoload": {
+        "psr-4": {
+            "Juksta\\LaravelRawSqlBuilder\\": "src"
+        }
+    },
+	"autoload-dev": {
+		"psr-4": {
+		    "Juksta\\LaravelRawSqlBuilder\\Tests\\": "tests/"
+		}
+	},
+	"scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    }
+}
